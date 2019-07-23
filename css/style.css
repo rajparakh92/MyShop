@@ -640,7 +640,7 @@ h6 {
 --------------------------------*/
 
 #why-us {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 #why-us .why-us-content .features {
@@ -669,7 +669,7 @@ h6 {
 }
 
 #why-us .counters {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 #why-us .counters span {
