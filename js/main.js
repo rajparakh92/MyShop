@@ -140,7 +140,7 @@
   ]
 
   for (let i = 0; i < items.length; i++) {
-    $("#items").append('<div class="col-lg-3 col-md-4 portfolio-item ' + items[i].type + '"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +'</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +'.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=9375970529&text=Please send me details of '+ items[i].name +'" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> </div></div></div></div>');
+    $("#items").append('<div class="col-lg-3 col-md-4 portfolio-item ' + items[i].type + '"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +'</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +'.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=919375970529&text=Please send me details of '+ items[i].name +'" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> </div></div></div></div>');
   }
 
 })(jQuery);
