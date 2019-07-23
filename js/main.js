@@ -11,15 +11,15 @@
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+  $('.back-to-top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
     return false;
   });
 
@@ -27,7 +27,7 @@
   new WOW().init();
 
   // Header scroll class
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
     } else {
@@ -40,7 +40,7 @@
   }
 
   // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
+  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -49,7 +49,7 @@
         if ($('#header').length) {
           top_space = $('#header').outerHeight();
 
-          if (! $('#header').hasClass('header-scrolled')) {
+          if (!$('#header').hasClass('header-scrolled')) {
             top_space = top_space - 40;
           }
         }
@@ -80,14 +80,14 @@
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
-  
-    nav_sections.each(function() {
+
+    nav_sections.each(function () {
       var top = $(this).offset().top - main_nav_height,
-          bottom = top + $(this).outerHeight();
-  
+        bottom = top + $(this).outerHeight();
+
       if (cur_pos >= top && cur_pos <= bottom) {
         main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
     });
   });
@@ -103,10 +103,10 @@
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
-    $('#portfolio-flters li').on( 'click', function() {
+    $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
-  
+
       portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
   });
@@ -124,9 +124,24 @@
     autoplay: true,
     dots: true,
     loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
+    responsive: {
+      0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
     }
   });
+
+  var items = [
+    { id: "1", name: "Dulhan Lehnga", image: "Dulhan Lehnga - 6499", price: "6499", type:"filter-app" },
+    { id: "1", name: "Net Party wear Lehnga", image: "Net Party wear Lehnga - 3999", price: "3999", type:"filter-app" },
+    { id: "1", name: "Party wear Lehnga", image: "Party wear Lehnga - 6999", price: "6999", type:"filter-app" },
+    { id: "1", name: "Weightless 1", image: "Weightless - 399", price: "399", type:"filter-app" },
+    { id: "1", name: "Weightless 2", image: "Weightless 1 - 399", price: "399", type:"filter-app" },
+    { id: "1", name: "Weightless 3", image: "Weightless 2 - 399", price: "399", type:"filter-app" },
+    { id: "1", name: "Weightless 4", image: "Weightless 3 - 399", price: "399", type:"filter-app" }
+  ]
+
+  for (let i = 0; i < items.length; i++) {
+    $("#items").append('<div class="col-lg-3 col-md-4 portfolio-item ' + items[i].type + '"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +'</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +'.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=9375970529&text=Please send me details of '+ items[i].name +'" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> </div></div></div></div>');
+  }
 
 })(jQuery);
 
