@@ -146,8 +146,8 @@
     '" data-wow-delay="0.1s"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image 
     +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +
     '</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +
-    '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=919375970529&text=Please send me details of '
-    + items[i].name +'" class="link-details" title="Order on WhatsApp"><i class="ion ion-social-whatsapp-outline"></i></a> </div></div></div></div>');
+    '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=919375970529&text=Hello Sir, Please send me details of '
+    + items[i].name +'. Thank you." class="link-details" title="Order on WhatsApp"><i class="ion ion-social-whatsapp-outline"></i></a> </div></div></div></div>');
   }
 
 })(jQuery);
