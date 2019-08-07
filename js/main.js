@@ -129,26 +129,27 @@
     }
   });
 
+  let mobileNumber = '6359005218';
+
+  $('#mob').text(mobileNumber);
+
   var items = [
     { id: "1", name: "Dulhan Lehenga", image: "Dulhan Lehnga - 6499", price: "6499", type:"new-arrival" },
-    { id: "1", name: "Net Party wear Lehenga", image: "Net Party wear Lehnga - 3999", price: "3999", type:"festive" },
-    { id: "1", name: "Party wear Lehenga", image: "Party wear Lehnga - 6999", price: "6999", type:"new-arrival" },
-    { id: "1", name: "Weightless 1", image: "Weightless - 399", price: "399", type:"festive" },
-    { id: "1", name: "Weightless 2", image: "Weightless 1 - 399", price: "399", type:"offers" },
-    { id: "1", name: "Weightless 3", image: "Weightless 2 - 399", price: "399", type:"new-arrival" },
-    { id: "1", name: "Weightless 4", image: "Weightless 3 - 399", price: "399", type:"offers" }
+    { id: "2", name: "Net Party wear Lehenga", image: "Net Party wear Lehnga - 3999", price: "3999", type:"festive" },
+    { id: "3", name: "Party wear Lehenga", image: "Party wear Lehnga - 6999", price: "6999", type:"new-arrival" },
+    { id: "4", name: "Weightless 1", image: "Weightless - 399", price: "399", type:"festive" },
+    { id: "5", name: "Weightless 2", image: "Weightless 1 - 399", price: "399", type:"offers" },
+    { id: "6", name: "Weightless 3", image: "Weightless 2 - 399", price: "399", type:"new-arrival" },
+    { id: "7", name: "Weightless 4", image: "Weightless 3 - 399", price: "399", type:"offers" }
   ]
-
-  var message
 
   for (let i = 0; i < items.length; i++) {
     $("#items").append('<div class="col-lg-3 col-md-4 portfolio-item ' + items[i].type + 
     '" data-wow-delay="0.1s"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image 
     +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +
     '</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +
-    '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=919375970529&text=Hello, I am ineterested in buying '
+    '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
     + items[i].name +'. Please send me details. Thank you." class="link-details" title="Order on WhatsApp"><i class="ion ion-social-whatsapp-outline"></i></a> </div></div></div></div>');
   }
-
 })(jQuery);
 
