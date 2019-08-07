@@ -1567,3 +1567,10 @@ h6 {
     margin-bottom: 25px;
   }
 }
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #intro{ display: block; }  /* show it on smaller screen */
+}
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  #intro{ display: none; }   /* hide it on larger screens */
+}
