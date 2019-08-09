@@ -144,7 +144,7 @@
   ]
 
   for (let i = 0; i < items.length; i++) {
-    $("#items").append('<div class="col-lg-3 col-md-4 portfolio-item ' + items[i].type + 
+    $("#items").append('<div class="col-lg-2 col-6 portfolio-item ' + items[i].type + 
     '" data-wow-delay="0.1s"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image 
     +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +
     '</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +
