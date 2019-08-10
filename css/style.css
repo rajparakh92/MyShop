@@ -1571,3 +1571,8 @@ h6 {
 @media screen and (min-width: 0px) and (max-width: 400px) {
   #intro{ display: none; }  /* show it on smaller screen */
 }
+
+.item-label {
+  min-height: 50px;
+  font-size: 13px;
+}

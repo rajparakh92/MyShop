@@ -146,10 +146,10 @@
   for (let i = 0; i < items.length; i++) {
     $("#items").append('<div class="col-lg-2 col-6 portfolio-item ' + items[i].type + 
     '" data-wow-delay="0.1s"> <div class="portfolio-wrap"> <img src="img/portfolio/'+ items[i].image 
-    +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"> <h5><a href="#">'+ items[i].name +
-    '</a></h5> <p>Price: '+ items[i].price +'</p><div> <a href="img/portfolio/'+ items[i].image +
-    '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
-    + items[i].name +'. Please send me details. Thank you." class="link-details" title="Order on WhatsApp"><i class="ion ion-social-whatsapp-outline"></i></a> </div></div></div></div>');
+    +'.jpg" class="img-fluid" alt=""> <div class="portfolio-info"><div> <a href="img/portfolio/'+ 
+    items[i].image +'.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> <a href="https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
+    + items[i].name +'. Please send me details. Thank you." class="link-details" title="Order on WhatsApp"><i class="ion ion-social-whatsapp-outline"></i></a> </div></div></div><p class="item-label text-center">'+ 
+    items[i].name +' <br/><b>&#x20b9;'+ items[i].price +' </b></p></div>');
   }
 })(jQuery);
 
