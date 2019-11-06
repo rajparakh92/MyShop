@@ -1576,3 +1576,9 @@ h6 {
   min-height: 50px;
   font-size: 13px;
 }
+
+.buy-btn {
+  border-radius: 20px;
+  width: 80px;
+  background-color: #0a98c0;
+}

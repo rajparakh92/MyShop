@@ -150,7 +150,7 @@
       items[i].image + '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i>' +
       '</a></div></div></div><p class="item-label text-center">' +
       items[i].name + ' <br/><b>&#x20b9;' + items[i].price + ' </b><br/>' +
-      '<button id="buy" name="'+ items[i].name +'" style="border-radius: 20px;width: 80px;background-color: #0a98c0;" class="btn btn-primary">Buy</button></p></div>');
+      '<button id="buy" name="'+ items[i].name +'" class="btn btn-primary buy-btn">Buy</button></p></div>');
   }
 
   $('#buy').click(function () {
