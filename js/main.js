@@ -154,7 +154,7 @@
   }
 
   $('#buy').click(function () {
-    let url = 'https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
+    let url = 'https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am interested in buying '
     + this.name + '. Please send me details. Thank you.';
     window.location.href = url;
   });
