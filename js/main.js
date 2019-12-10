@@ -6,6 +6,9 @@
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
+         $('html, body').animate({
+          scrollTop: $("#portfolio").offset().top
+          }, 2000);
       });
     }
   });
