@@ -1,9 +1,11 @@
 (function ($) {
   "use strict";
 
+ setTimeout(function(){
   $('html, body').animate({
     scrollTop: $("#portfolio").offset().top
   }, 2000);
+ },5000);
   
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
