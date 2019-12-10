@@ -1,11 +1,5 @@
 (function ($) {
   "use strict";
-
- setTimeout(function(){
-  $('html, body').animate({
-    scrollTop: $("#portfolio").offset().top
-  }, 1000);
- },1000);
   
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
@@ -25,7 +19,7 @@
     }
   });
   $('.back-to-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+    $('html, body').animate({ scrollTop: $("#portfolio").offset().top }, 1500, 'easeInOutExpo');
     return false;
   });
 
