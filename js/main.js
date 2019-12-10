@@ -4,8 +4,8 @@
  setTimeout(function(){
   $('html, body').animate({
     scrollTop: $("#portfolio").offset().top
-  }, 4000);
- },2000);
+  }, 1000);
+ },1000);
   
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
