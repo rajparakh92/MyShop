@@ -96,6 +96,11 @@
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
     });
+    setTimeout(function(){
+      $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+      }, 1000);
+    },1000);
   });
 
   // jQuery counterUp (used in Whu Us section)
