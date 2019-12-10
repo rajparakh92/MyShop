@@ -1,14 +1,15 @@
 (function ($) {
   "use strict";
 
+  $('html, body').animate({
+    scrollTop: $("#portfolio").offset().top
+  }, 2000);
+  
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
-         $('html, body').animate({
-          scrollTop: $("#portfolio").offset().top
-          }, 2000);
       });
     }
   });
