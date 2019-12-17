@@ -1,6 +1,6 @@
 (function ($) {
   "use strict";
-  
+
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
@@ -90,11 +90,6 @@
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
     });
-    setTimeout(function(){
-      $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-      }, 1000);
-    },1000);
   });
 
   // jQuery counterUp (used in Whu Us section)
@@ -159,7 +154,7 @@
   }
 
   $('#buy').click(function () {
-    let url = 'https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am interested in buying '
+    let url = 'https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
     + this.name + '. Please send me details. Thank you.';
     window.location.href = url;
   });
