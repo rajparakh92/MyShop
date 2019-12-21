@@ -150,13 +150,17 @@
       items[i].image + '.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i>' +
       '</a></div></div></div><p class="item-label text-center">' +
       items[i].name + ' <br/><b>&#x20b9;' + items[i].price + ' </b><br/>' +
-      '<button id="buy" name="'+ items[i].name +'" class="btn btn-primary buy-btn">Buy</button></p></div>');
+      '<button id="buy" name="' + items[i].name + '" class="btn btn-primary buy-btn">Buy</button></p></div>');
   }
 
   $('#buy').click(function () {
     let url = 'https://api.whatsapp.com/send?phone=91' + mobileNumber + '&text=Hello, I am ineterested in buying '
-    + this.name + '. Please send me details. Thank you.';
+      + this.name + '. Please send me details. Thank you.';
     window.location.href = url;
+  });
+
+  $("#menu").on("click", ".portf", function (event) {
+    console.log('testing');
   });
 })(jQuery);
 
