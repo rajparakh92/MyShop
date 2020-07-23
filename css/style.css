@@ -1575,10 +1575,13 @@ h6 {
 .item-label {
   min-height: 50px;
   font-size: 13px;
+  background-color: #efefe7;
+  padding: 10px 0px;
 }
 
 .buy-btn {
-  border-radius: 20px;
+  border-radius: 7px;
   width: 80px;
-  background-color: #0a98c0;
+  background-color: #953d45;
+  padding: 2px;
 }

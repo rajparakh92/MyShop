@@ -149,8 +149,8 @@
       + '.jpg" class="img-fluid" alt=""> <div class="portfolio-info"><div> <a href="img/portfolio/' +
       items[i].image + '.jpg" data-lightbox="portfolio" data-title="' + items[i].name + '" class="link-preview" title="Preview"><i class="ion ion-eye"></i>' +
       '</a></div></div></div><p class="item-label text-center">' +
-      items[i].name + ' <br/><b>&#x20b9;' + items[i].price + ' </b><br/>' +
-      '<button name="' + items[i].name + '" class="btn btn-primary buy-btn">Buy</button></p></div>');
+      items[i].name + '<br/><b style="font-size:15px">&#x20b9; ' + items[i].price + '  </b><br/>' +
+      '<button name="' + items[i].name + '" class="btn btn-danger buy-btn">Buy</button></p></div>');
   }
 
   $('.buy-btn').click(function () {
