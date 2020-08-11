@@ -134,13 +134,13 @@
   $('#mob').text(mobileNumber);
 
   var items = [
-    { id: "1", name: "Dulhan Lehenga", image: "Dulhan Lehnga - 6499.jpg", price: "5999", type: "offers" },
-    { id: "2", name: "Net Party wear Lehenga", image: "Net Party wear Lehnga - 3999.jpg", price: "3999", type: "festive" },
-    { id: "3", name: "Party wear Lehenga", image: "Party wear Lehnga - 6999.jpg", price: "6499", type: "festive" },
-    { id: "4", name: "Weightless Chex", image: "Weightless - 399.jpg", price: "349", type: "festive" },
-    { id: "5", name: "Weightless Green", image: "Weightless 1 - 399.jpg", price: "349", type: "offers" },
-    { id: "6", name: "Weightless Marron", image: "Weightless 2 - 399.jpg", price: "349", type: "festive" },
-    { id: "7", name: "Weightless Red", image: "Weightless 3 - 399.jpg", price: "349", type: "offers" },
+    { id: "1", name: "Dulhan Lehenga", image: "Dulhan Lehnga - 6499.png", price: "5999", type: "offers" },
+    { id: "2", name: "Net Party wear Lehenga", image: "Net Party wear Lehnga - 3999.png", price: "3999", type: "festive" },
+    { id: "3", name: "Party wear Lehenga", image: "Party Wear Lehenga - 6499.png", price: "6499", type: "festive" },
+    { id: "4", name: "Weightless Chex", image: "Weightless - 399.png", price: "349", type: "festive" },
+    { id: "5", name: "Weightless Green", image: "Weightless 1 - 399.png", price: "349", type: "offers" },
+    { id: "6", name: "Weightless Marron", image: "Weightless 2 - 399.png", price: "349", type: "festive" },
+    { id: "7", name: "Weightless Red", image: "Weightless 3 - 399.png", price: "349", type: "offers" },
     { id: "8", name: "Weightless Diamod", image: "Weightless - Diamod - 249.png", price: "249", type: "offers" },
     { id: "9", name: "Weightless Titli", image: "Weightless Titli - 299.png", price: "299", type: "new-arrival" },
     { id: "10", name: "Bengali Buta", image: "Bengali Buta - 299.png", price: "299", type: "new-arrival" },
