@@ -1585,3 +1585,13 @@ h6 {
   background-color: #953d45;
   padding: 2px;
 }
+
+.disPrice {
+  font-size: 12px;
+  color: #9392a3;
+}
+
+.price {
+  font-size: 14px;
+  padding-right: 5px;
+}
